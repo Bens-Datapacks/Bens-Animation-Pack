@@ -1,5 +1,7 @@
 {
-    "values": [
-        "benanim:load"
-    ]
+  "values": [
+    "animated_java:global/on_load",
+    "animated_java:global/internal/gu/load",
+    "benanim:load.mcfunction"
+  ]
 }
