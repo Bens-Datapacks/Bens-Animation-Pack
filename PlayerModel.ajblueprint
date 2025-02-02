@@ -42,10 +42,10 @@
 	"elements": [
 		{
 			"name": "rightleg_upper",
-			"position": [1.876, 11.256, 0],
+			"position": [1.876, 11.256, -3],
 			"rotation": [0, 0, 0],
 			"scale": [0.469, 0.469, 0.469],
-			"visibility": true,
+			"visibility": false,
 			"block": "minecraft:stone",
 			"config": {},
 			"item": "minecraft:player_head",
@@ -62,10 +62,10 @@
 		},
 		{
 			"name": "leftleg_upper",
-			"position": [-1.876, 11.256, 0],
+			"position": [-1.876, 11.256, -3],
 			"rotation": [0, 0, 0],
 			"scale": [0.469, 0.469, 0.469],
-			"visibility": true,
+			"visibility": false,
 			"block": "minecraft:stone",
 			"config": {},
 			"item": "minecraft:player_head",
@@ -82,10 +82,10 @@
 		},
 		{
 			"name": "chest_upper",
-			"position": [0, 22.512, 0],
+			"position": [0, 22.512, -3],
 			"rotation": [0, 0, 0],
 			"scale": [0.938, 0.469, 0.469],
-			"visibility": true,
+			"visibility": false,
 			"block": "minecraft:stone",
 			"config": {},
 			"item": "minecraft:player_head",
@@ -102,10 +102,10 @@
 		},
 		{
 			"name": "leftarm_upper",
-			"position": [-5.628, 22.512, 0],
+			"position": [-5.628, 22.512, -3],
 			"rotation": [0, 0, 0],
 			"scale": [0.469, 0.469, 0.469],
-			"visibility": true,
+			"visibility": false,
 			"block": "minecraft:stone",
 			"config": {},
 			"item": "minecraft:player_head",
@@ -122,10 +122,10 @@
 		},
 		{
 			"name": "rightarm_upper",
-			"position": [5.628, 22.512, 0],
+			"position": [5.628, 22.512, -3],
 			"rotation": [0, 0, 0],
 			"scale": [0.469, 0.469, 0.469],
-			"visibility": true,
+			"visibility": false,
 			"block": "minecraft:stone",
 			"config": {},
 			"item": "minecraft:player_head",
@@ -142,10 +142,10 @@
 		},
 		{
 			"name": "head",
-			"position": [0, 30.016, 0],
+			"position": [0, 30.016, -3],
 			"rotation": [0, 0, 0],
 			"scale": [0.938, 0.938, 0.938],
-			"visibility": true,
+			"visibility": false,
 			"block": "minecraft:stone",
 			"config": {},
 			"item": "minecraft:player_head",
@@ -182,9 +182,9 @@
 		},
 		{
 			"name": "top",
-			"position": [-7.999, 15.002, -22.999],
-			"rotation": [-110, 0, 0],
-			"scale": [0.998, 0.0625, 0.998],
+			"position": [-7.999, 16.002, -23.999],
+			"rotation": [0, 0, 0],
+			"scale": [0.998, 0.998, 0.0625],
 			"visibility": true,
 			"block": "minecraft:command_block",
 			"config": {},
@@ -202,72 +202,14 @@
 		},
 		{
 			"name": "void",
-			"position": [-5.5, 22.45014, -25.6741],
-			"rotation": [-110, 0, 0],
-			"scale": [0.6875, 0.0625, 0.375],
-			"visibility": true,
-			"block": "minecraft:black_concrete",
-			"config": {},
-			"item": "minecraft:diamond",
-			"item_display": "none",
-			"text": "\"Hello World!\"",
-			"lineWidth": 200,
-			"backgroundColor": "#000000",
-			"backgroundAlpha": 0.25,
-			"align": "center",
-			"shadow": false,
-			"seeThrough": false,
-			"uuid": "2b5d2204-9e71-c3a8-8c61-e28db1c2759e",
-			"type": "animated_java:vanilla_block_display"
-		},
-		{
-			"name": "chain1",
-			"position": [-7, 20, -21],
-			"rotation": [-52.5, 90, 0],
-			"scale": [0.25, 1, 0.25],
-			"visibility": true,
-			"block": "minecraft:stone",
-			"config": {},
-			"item": "minecraft:chain",
-			"item_display": "none",
-			"text": "\"Hello World!\"",
-			"lineWidth": 200,
-			"backgroundColor": "#000000",
-			"backgroundAlpha": 0.25,
-			"align": "center",
-			"shadow": false,
-			"seeThrough": false,
-			"uuid": "3f5f1159-09a5-c352-ac38-38227256da6d",
-			"type": "animated_java:vanilla_item_display"
-		},
-		{
-			"name": "chain2",
-			"position": [7, 20, -21],
-			"rotation": [-52.5, 90, 0],
-			"scale": [0.25, 1, 0.25],
-			"visibility": true,
-			"block": "minecraft:stone",
-			"config": {},
-			"item": "minecraft:chain",
-			"item_display": "none",
-			"text": "\"Hello World!\"",
-			"lineWidth": 200,
-			"backgroundColor": "#000000",
-			"backgroundAlpha": 0.25,
-			"align": "center",
-			"shadow": false,
-			"seeThrough": false,
-			"uuid": "5515d76e-db50-b125-29d1-75d67e057886",
-			"type": "animated_java:vanilla_item_display"
-		},
-		{
-			"name": "screen",
 			"position": [-7, 15.001, -23],
 			"rotation": [0, 0, 0],
 			"scale": [0.875, 0.0625, 0.875],
 			"visibility": true,
 			"block": "minecraft:black_concrete",
-			"config": {},
+			"config": {
+				"override_brightness": true
+			},
 			"item": "minecraft:diamond",
 			"item_display": "none",
 			"text": "\"Hello World!\"",
@@ -281,31 +223,11 @@
 			"type": "animated_java:vanilla_block_display"
 		},
 		{
-			"name": "screentext",
-			"position": [-0.3, 22.422, -25.63701],
-			"rotation": [160, 0, -180],
-			"scale": [0.1, 0.1, 0.1],
-			"visibility": true,
-			"block": "minecraft:stone",
-			"config": {},
-			"item": "minecraft:diamond",
-			"item_display": "none",
-			"text": "\" execute as @e[\\n   type=text_display,\\n   tag=benAnim.CMD.ScreenText,\\n   limit=1\\n ] at @s run data merge entity @s {\\n   text:'{\\n     \\\"text\\\":\\\"If only this type of JSON formatting was possible in command blocks and datapacks. I'd be living the dream cause 90% of my problems come from trying to read the novel-like text of JSON in Minecraft commands. But no, I have to debug for 5 hours to find out my issue was that I had placed a square bracket instead of a squiggly one.'\\\"\\n   }'\\n }\"\n",
-			"lineWidth": 270,
-			"backgroundColor": "#000000",
-			"backgroundAlpha": 1,
-			"align": "left",
-			"shadow": false,
-			"seeThrough": false,
-			"uuid": "465fb2e6-c05d-029a-5784-6dc2363687ae",
-			"type": "animated_java:text_display"
-		},
-		{
 			"name": "rightleg_lower",
-			"position": [1.876, 7.504, 0],
+			"position": [1.876, 7.504, -3],
 			"rotation": [0, 0, 0],
 			"scale": [0.469, 0.938, 0.469],
-			"visibility": true,
+			"visibility": false,
 			"block": "minecraft:stone",
 			"config": {},
 			"item": "minecraft:player_head",
@@ -322,10 +244,10 @@
 		},
 		{
 			"name": "leftleg_lower",
-			"position": [-1.876, 7.504, 0],
+			"position": [-1.876, 7.504, -3],
 			"rotation": [0, 0, 0],
 			"scale": [0.469, 0.938, 0.469],
-			"visibility": true,
+			"visibility": false,
 			"block": "minecraft:stone",
 			"config": {},
 			"item": "minecraft:player_head",
@@ -342,10 +264,10 @@
 		},
 		{
 			"name": "rightarm_lower",
-			"position": [5.628, 18.76, 0],
+			"position": [5.628, 18.76, -3],
 			"rotation": [0, 0, 0],
 			"scale": [0.469, 0.938, 0.469],
-			"visibility": true,
+			"visibility": false,
 			"block": "minecraft:stone",
 			"config": {},
 			"item": "minecraft:player_head",
@@ -362,10 +284,10 @@
 		},
 		{
 			"name": "leftarm_lower",
-			"position": [-5.628, 18.76, 0],
+			"position": [-5.628, 18.76, -3],
 			"rotation": [0, 0, 0],
 			"scale": [0.469, 0.938, 0.469],
-			"visibility": true,
+			"visibility": false,
 			"block": "minecraft:stone",
 			"config": {},
 			"item": "minecraft:player_head",
@@ -382,10 +304,10 @@
 		},
 		{
 			"name": "chest_lower",
-			"position": [0, 18.76, 0],
+			"position": [0, 18.76, -3],
 			"rotation": [0, 0, 0],
 			"scale": [0.938, 0.938, 0.469],
-			"visibility": true,
+			"visibility": false,
 			"block": "minecraft:stone",
 			"config": {},
 			"item": "minecraft:player_head",
@@ -404,7 +326,7 @@
 	"outliner": [
 		{
 			"name": "player",
-			"origin": [1, 0, 0],
+			"origin": [1, 0, -3],
 			"color": 0,
 			"configs": {
 				"variants": {}
@@ -412,14 +334,14 @@
 			"uuid": "1e8287a7-166b-a87c-df43-16e95c6dd5ca",
 			"export": true,
 			"mirror_uv": false,
-			"isOpen": true,
+			"isOpen": false,
 			"locked": false,
-			"visibility": true,
+			"visibility": false,
 			"autouv": 0,
 			"children": [
 				{
 					"name": "rightleg",
-					"origin": [1.876, 11.256, 0],
+					"origin": [1.876, 11.256, -3],
 					"color": 0,
 					"configs": {
 						"variants": {}
@@ -429,13 +351,13 @@
 					"mirror_uv": false,
 					"isOpen": true,
 					"locked": false,
-					"visibility": true,
+					"visibility": false,
 					"autouv": 0,
 					"children": ["4aad6fc1-ac86-8d9d-3bea-7307f6dca063", "e1403a32-e522-6a63-4bb4-50caaee15f3e"]
 				},
 				{
 					"name": "leftleg",
-					"origin": [-1.876, 11.256, 0],
+					"origin": [-1.876, 11.256, -3],
 					"color": 0,
 					"configs": {
 						"variants": {}
@@ -445,13 +367,13 @@
 					"mirror_uv": false,
 					"isOpen": true,
 					"locked": false,
-					"visibility": true,
+					"visibility": false,
 					"autouv": 0,
 					"children": ["97de4c81-1538-02bc-62ed-131b78601a09", "900377c9-0abf-d000-c4f4-dc86efc5b790"]
 				},
 				{
 					"name": "chest",
-					"origin": [0, 11.256, 0],
+					"origin": [0, 11.256, -3],
 					"color": 0,
 					"configs": {
 						"variants": {}
@@ -461,13 +383,13 @@
 					"mirror_uv": false,
 					"isOpen": true,
 					"locked": false,
-					"visibility": true,
+					"visibility": false,
 					"autouv": 0,
 					"children": ["0c81a7c0-3ef5-62f7-550c-ed51f985d323", "259872bb-2a19-771f-29e5-16a2b9f3b5bc"]
 				},
 				{
 					"name": "leftarm",
-					"origin": [-5.628, 20.636, 0],
+					"origin": [-5.628, 20.636, -3],
 					"color": 0,
 					"configs": {
 						"variants": {}
@@ -477,13 +399,13 @@
 					"mirror_uv": false,
 					"isOpen": true,
 					"locked": false,
-					"visibility": true,
+					"visibility": false,
 					"autouv": 0,
 					"children": ["f35fdb41-63cb-aa3f-cffd-9c284e81742a", "9fc74dc0-e684-2e31-6345-b1afa1218b7d"]
 				},
 				{
 					"name": "rightarm",
-					"origin": [5.628, 20.636, 0],
+					"origin": [5.628, 20.636, -3],
 					"color": 0,
 					"configs": {
 						"variants": {}
@@ -493,13 +415,13 @@
 					"mirror_uv": false,
 					"isOpen": true,
 					"locked": false,
-					"visibility": true,
+					"visibility": false,
 					"autouv": 0,
 					"children": ["bdf5d5d5-6754-246c-d02d-6669dd4c60b6", "83f3e4e2-ced4-78a3-2044-e3526716dec3"]
 				},
 				{
 					"name": "head1",
-					"origin": [0, 22.512, 0],
+					"origin": [0, 22.512, -3],
 					"color": 0,
 					"configs": {
 						"variants": {}
@@ -509,7 +431,7 @@
 					"mirror_uv": false,
 					"isOpen": true,
 					"locked": false,
-					"visibility": true,
+					"visibility": false,
 					"autouv": 0,
 					"children": ["9f643e08-7104-e1f3-5da6-28477428befe"]
 				}
@@ -525,17 +447,28 @@
 			"uuid": "6379f31a-c2ac-30bc-04bd-259d0fdda528",
 			"export": true,
 			"mirror_uv": false,
-			"isOpen": false,
+			"isOpen": true,
 			"locked": false,
 			"visibility": true,
 			"autouv": 0,
 			"children": [
-				"1e3e80f8-e289-6977-7ceb-1ae60f455ab5",
-				"2b5d2204-9e71-c3a8-8c61-e28db1c2759e",
 				"61507472-066f-ec1d-d4d5-adaae8560fea",
-				"3f5f1159-09a5-c352-ac38-38227256da6d",
-				"5515d76e-db50-b125-29d1-75d67e057886",
-				"465fb2e6-c05d-029a-5784-6dc2363687ae"
+				{
+					"name": "rotate",
+					"origin": [-7.999, 16.002, -23.999],
+					"color": 0,
+					"configs": {
+						"variants": {}
+					},
+					"uuid": "737701d1-fdaf-2236-7f83-d25d951f34ff",
+					"export": true,
+					"mirror_uv": false,
+					"isOpen": true,
+					"locked": false,
+					"visibility": true,
+					"autouv": 0,
+					"children": ["1e3e80f8-e289-6977-7ceb-1ae60f455ab5"]
+				}
 			]
 		},
 		"ce7215cf-5ea7-8efb-5a9b-f2b159fdac95"
@@ -692,446 +625,6 @@
 			"start_delay": "",
 			"loop_delay": "0",
 			"excluded_nodes": []
-		},
-		{
-			"uuid": "cf1a608e-e730-d782-41fd-095669ba3b53",
-			"name": "Left_Wave_Start",
-			"loop": "hold",
-			"override": false,
-			"length": 0.35,
-			"snapping": 20,
-			"selected": false,
-			"saved": true,
-			"path": "D:\\Ben\\Games\\Minecraft\\ATLauncher\\instances\\FabulouslyOptimized1206\\datapacks\\Ben's Animation Pack\\PlayerAnimations\\Left_Wave.json",
-			"anim_time_update": "",
-			"blend_weight": "",
-			"start_delay": "",
-			"loop_delay": "",
-			"excluded_nodes": [],
-			"animators": {
-				"4d212565-90db-0bd1-0441-43404adb1cdd": {
-					"name": "leftarm",
-					"type": "bone",
-					"keyframes": [
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "80c8cc3a-16af-729d-7cd3-9c794135892c",
-							"time": 0,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-10.76735"
-								}
-							],
-							"uuid": "89c08a5f-44e7-1685-4a47-57224a012977",
-							"time": 0.05,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-35.18364"
-								}
-							],
-							"uuid": "0f107f0c-bf53-0494-2f43-927c226e5297",
-							"time": 0.1,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-66.07881"
-								}
-							],
-							"uuid": "5f952b73-922a-fbda-3d15-bafa745c70ac",
-							"time": 0.15,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-98.92119"
-								}
-							],
-							"uuid": "028bb98d-8f73-34ed-2933-74e2e943c2b4",
-							"time": 0.2,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-129.81636"
-								}
-							],
-							"uuid": "8fab7d71-a581-3cf7-e4a7-c52d828a3c4a",
-							"time": 0.25,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-154.23265"
-								}
-							],
-							"uuid": "a17f280b-7a1b-23a9-c8dc-b8885bc7283f",
-							"time": 0.3,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-165"
-								}
-							],
-							"uuid": "6bd4940f-9f01-861c-c918-711fce20c52e",
-							"time": 0.35,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						}
-					]
-				}
-			}
-		},
-		{
-			"uuid": "6ccdaa73-1571-ac78-f9e7-5bc4dd0a1510",
-			"name": "Left_Wave_End",
-			"loop": "hold",
-			"override": false,
-			"length": 0.35,
-			"snapping": 20,
-			"selected": true,
-			"saved": true,
-			"path": "D:\\Ben\\Games\\Minecraft\\ATLauncher\\instances\\FabulouslyOptimized1206\\datapacks\\Ben's Animation Pack\\PlayerAnimations\\Left_Wave.json",
-			"anim_time_update": "",
-			"blend_weight": "",
-			"start_delay": "",
-			"loop_delay": "",
-			"excluded_nodes": [],
-			"animators": {
-				"4d212565-90db-0bd1-0441-43404adb1cdd": {
-					"name": "leftarm",
-					"type": "bone",
-					"keyframes": [
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-165"
-								}
-							],
-							"uuid": "b9dda60f-e8d2-ea70-973b-d87f8077150f",
-							"time": 0,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-154.23265"
-								}
-							],
-							"uuid": "a88467e9-9413-4ef4-fa77-9f13c9f610c3",
-							"time": 0.05,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-129.81636"
-								}
-							],
-							"uuid": "0aa149da-c4e9-0107-bba7-d96979e106a4",
-							"time": 0.1,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-98.92119"
-								}
-							],
-							"uuid": "de47b720-3d54-299f-197b-bb454dc35e76",
-							"time": 0.15,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-66.07881"
-								}
-							],
-							"uuid": "f7f96042-2817-9c30-3d19-a87d0d73f12c",
-							"time": 0.2,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-35.18364"
-								}
-							],
-							"uuid": "3c5307d2-4e52-a8c9-26b3-d0058b1cedf9",
-							"time": 0.25,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-10.76735"
-								}
-							],
-							"uuid": "05acd4aa-038d-15cd-621e-1934a9f6fa19",
-							"time": 0.3,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "ed1971a5-a4ca-603c-4c98-5412cc3e7b1c",
-							"time": 0.35,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						}
-					]
-				}
-			}
-		},
-		{
-			"uuid": "f3d39297-6312-28ce-ab05-087b8aed48d4",
-			"name": "Left_Wave_Loop",
-			"loop": "loop",
-			"override": false,
-			"length": 0.3,
-			"snapping": 20,
-			"selected": false,
-			"saved": true,
-			"path": "D:\\Ben\\Games\\Minecraft\\ATLauncher\\instances\\FabulouslyOptimized1206\\datapacks\\Ben's Animation Pack\\PlayerAnimations\\Left_Wave.json",
-			"anim_time_update": "",
-			"blend_weight": "",
-			"start_delay": "",
-			"loop_delay": "0",
-			"excluded_nodes": [],
-			"animators": {
-				"4d212565-90db-0bd1-0441-43404adb1cdd": {
-					"name": "leftarm",
-					"type": "bone",
-					"keyframes": [
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-165"
-								}
-							],
-							"uuid": "d66269cf-b82f-892e-b64d-de5d3395a731",
-							"time": 0,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-159.98274"
-								}
-							],
-							"uuid": "159773c7-670e-799c-f626-1b6585bbcf76",
-							"time": 0.05,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-135.01726"
-								}
-							],
-							"uuid": "056b9c7e-8887-e000-ab27-c032818e962e",
-							"time": 0.1,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-130"
-								}
-							],
-							"uuid": "8a36f1a0-ea26-144e-7a66-96e6611cc5f1",
-							"time": 0.15,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-135.01726"
-								}
-							],
-							"uuid": "b95426cd-8c13-0c08-fa8b-c056838c65b8",
-							"time": 0.2,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-159.98274"
-								}
-							],
-							"uuid": "c38808c0-d811-2ea5-d84c-9b5e19987fdc",
-							"time": 0.25,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": "0",
-									"y": "0",
-									"z": "-165"
-								}
-							],
-							"uuid": "9d112c91-6bc1-440b-8687-144c3c0d6e5a",
-							"time": 0.3,
-							"color": -1,
-							"interpolation": "linear",
-							"easing": "linear",
-							"easingArgs": []
-						}
-					]
-				}
-			}
 		}
 	],
 	"animation_controllers": []
